@@ -96,7 +96,7 @@ def secret_page(username=None, password=None):
 
 def after_login_incorrect():
     """
-    Returns the HTML for the page when the login credentials were typed
+    Returns the HTML when type typed
     incorrectly.
     """
     return _wrapper(r"""
