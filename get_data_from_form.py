@@ -79,7 +79,7 @@ def login_page():
 
 def secret_page(username=None, password=None):
     """
-    Returns the HTML for the page visited after the user has logged-in.
+    Returns the HTML after logged-in.
     """
     if username is None or password is None:
         raise ValueError("You need to pass both username and password!")
@@ -87,7 +87,7 @@ def secret_page(username=None, password=None):
     return _wrapper("""
     <h1> Welcome, {username}! </h1>
 
-    <p> <small> Pst! I know your password is
+    <p> <small> See!
         <span class="spoilers"> {password}</span>.
         </small>
     </p>
